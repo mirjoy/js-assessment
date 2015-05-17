@@ -79,11 +79,12 @@ define(function() {
 
     findAllOccurrences : function(arr, target) {
         allOccurrences = []
+        var startIndex = 0
 
         _.each(arr, function(letter){
-     
           if (letter === target)
-            { allOccurrences.push(arr.indexOf(letter)) }
+            { allOccurrences.push(arr.indexOf(letter, startIndex)) }
+          startIndex++;
         });
         
         return allOccurrences;

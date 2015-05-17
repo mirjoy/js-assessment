@@ -55,12 +55,12 @@ define([
         this.foo = 'bar';
         this.baz = 'bim';
       };
-
+      
       C.prototype.bop = 'bip';
 
       var obj = new C();
 
-      expect(answers.iterate(obj)).to.eql([ 'foo: bar', 'baz: bim' ]);
+      expect(answers.iterate(obj)).to.eql([ 'foo: bar', 'baz: bim', 'bop: bip' ]);
     });
   });
 });

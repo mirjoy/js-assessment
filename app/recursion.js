@@ -11,7 +11,8 @@ define(function() {
     },
 
     fibonacci: function(n) {
-
+      for (var i = 0; i++; i < n)
+      return i += fibonacci(i);
     },
 
     validParentheses: function(n) {
