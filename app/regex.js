@@ -14,12 +14,13 @@ define(function() {
       return /[aeiou]/;
     },
 
-    captureThreeNumbers : function(str) {
-      return //;
+    captureThreeNumbers : function(str) {      
+      var matches = /\d{3}/.exec(str);
+      return matches ? matches[0] : false;
     },
 
     matchesPattern : function(str) {
-      return //;
+      return /\d{3}[-]\d{3}[-]\d{4}/;
     },
     
     isUSD : function(str) {
